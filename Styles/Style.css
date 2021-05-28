@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: limelight;
+  src: url(../font/limelight-regular.ttf)
+}
+:root {
+  --backcolorfirts: #f3f4ed;
+  --backcolorSecond: #838485;
+  --font-task2: "./font/Limelight-Regular.ttf"
+}
+header {
+  background-color: tomato;
+  width: auto;
+  height: 90px;
+}
+.section1 {
+background-color: var(--backcolorfirts);
+}
+.bodyback {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  height: 100vh;
+  font-family: limelight;
+}
+.textsize {
+  font-size: 500%;
+  text-shadow: 20px black;
+}
+.section2 {
+  background-color: var(--backcolorSecond);
+}
