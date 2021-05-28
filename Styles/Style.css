@@ -32,3 +32,6 @@ background-color: var(--backcolorfirts);
 .section2 {
   background-color: var(--backcolorSecond);
 }
+.section3 {
+  background-color: var(--backcolorfirts);
+}
