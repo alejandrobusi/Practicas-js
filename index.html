@@ -1,58 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practicas JS</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Styles/Style.css">
-</head>
-<body>
-  <header  >
-   <div class="container-fluid" >
-     <div class="d-flex justify-content-center">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Img/javascript_icon_130900.png" type="image/x-icon">
+    <title>Practicas JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/Style.css">
+    <script src="./Js/app.js"></script>
+  </head>
+  <body>
+  <header class="sticky-top shadow" >
+  <div class="container-fluid d-flex justify-content-between " >
+    <div class="align-items-center">
       <h1>Practicas JS</h1>
-     </div>
     </div>
+    <div>
+      <img src="./Img/480px-Unofficial_JavaScript_logo_2.svg.png" class="logo" alt="">
+    </div>
+  </div>
   </header>
-  <section class="container py-5 section1">
+  <section class="container py-5 rounded-top shadow section-a">
     <div class="row">
       <h1>Ejercicio numero 1</h1>
       <p>1- Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “un mensaje”.</p>
     </div>
     <div>
-     <button type="button" id="boton1" class="btn btn-success" onclick="alertar()" >Test</button>
+      <button type="button" id="boton1" class="btn btn-success" onclick="alertar()" >Test</button>
     </div>
   </section>
-  <section class="container py-5 section2">
+  <section class="container py-5 shadow section-b">
     <div class="row">
       <h1>Ejercicio numero 2</h1>
       <p>2- Escribe un programa de una sola línea que escriba en la pantalla un texto que diga «Hello World» (document.write).</p>
     </div>
     <div>
-     <button type="button" class="btn btn-success" onClick="window.location='./ejercicio2.html'">Test</button>
+      <button type="button" class="btn btn-success" onClick="window.location='./ejercicio2.html'">Test</button>
     </div>
-   </section>
-   <section class="container py-5 section3">
+  </section>
+  <section class="container py-5 shadow section-a">
     <div>
       <h1>Ejercicio numero 3</h1>
       <p>3- Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.</p>
     </div>
     <div >
-      <form class="d-flex flex-row">
-        <div class="mb-1  col-lg-3">
+      <form class="d-flex">
+        <div class="mb-1  col-lg-2">
           <label for="imputej3a" class="form-label">Escribe el primer numero.</label>
           <input type="text" class="form-control" id="imputej3a" ">
         </div>
-        <div class="mb-1 mx-3 col-lg-3">
+        <div class="mb-1 mx-3 col-lg-2">
           <label for="imputej3b" class="form-label">Escribe el Segundo numero.</label>
           <input type="text" class="form-control" id="imputej3b" >
         </div>
       </form>
-      <button type="submit" class="mt-2 mx- btn btn-success" onclick="suma()">Sumar</button>
-   </section>
- <script src="./Js/app.js"></script>
+      <button type="submit" class="mt-2 btn btn-success" onclick="suma()">Sumar</button>
+  </section>
+  <section class="container py-5 shadow section-b">
+    <div>
+      <h1>Ejercicio numero 4</h1>
+      <p>4- Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga «Hola nombreUsuario».</p>
+    </div>
+    <div >
+      <form class="d-flex ">
+        <div class="mb-1  col-lg-2">
+          <label for="imputej4a" class="form-label">Escribe una frase.</label>
+          <input type="text" class="form-control" id="imputej4a" ">
+        </div>
+      </form>
+      <button type="submit" class="mt-2 btn btn-success" onclick="devolvertxt()">Test</button>
+  </section>
+  <section class="container py-5 shadow section-a">
+    <div>
+      <h1>Ejercicio numero 5</h1>
+      <p>5.- Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números. <br>
+        Nota: Tener en cuenta la siguiente función: <strong> parseInt.</strong>
+        </p>
+    </div>
+    <div >
+      <button type="submit" class="mt-2 btn btn-success" onclick="suma2()">Test</button>
+    </div>  
+  </section>
+  <section class="container py-5 shadow section-b">
+    <div>
+      <h1>Ejercicio numero 6</h1>
+      <p>6- Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.</p>
+    </div>
+    <div>
+      <form class="d-flex ">
+        <div class="mb-1  col-lg-2">
+          <label for="imputej6a" class="form-label">Escribe el primer numero.</label>
+          <input type="text" class="form-control" id="imputej6a" ">
+        </div>
+        <div class="mb-1 mx-3 col-lg-2">
+          <label for="imputej6b" class="form-label">Escribe el Segundo numero.</label>
+          <input type="text" class="form-control" id="imputej6b" >
+        </div>
+      </form>
+      <button type="submit" class="mt-2 btn btn-success" onclick="comparar()">Test</button>
+    </div>  
+  </section>
+  <section class="container py-5 shadow section-a">
+    <div>
+      <h1>Ejercicio numero 7</h1>
+      <p>7- Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.</p>
+    </div>
+    <div>
+      <form class="d-flex">
+        <div class="mb-1  col-lg-2">
+          <label for="imputej7a" class="form-label">Escribe el primer numero.</label>
+          <input type="text" class="form-control" id="imputej7a" ">
+        </div>
+        <div class="mb-1 mx-3 col-lg-2">
+          <label for="imputej7b" class="form-label">Escribe el Seg numero.</label>
+          <input type="text" class="form-control" id="imputej7b" >
+        </div>
+        <div class="mb-1  col-lg-2">
+          <label for="imputej7c" class="form-label">Escribe el tercer numero.</label>
+          <input type="text" class="form-control" id="imputej7c" >
+        </div>
+      </form>
+      <button type="submit" class="mt-2 btn btn-success" onclick="comparar2()">Test</button>
+    </div>  
+  </section>
+  <section class="container py-5 shadow section-b">
+    <div>
+      <h1>Ejercicio numero 8</h1>
+      <p>8.- Escribe un programa que pida un número y diga si es divisible por 2.</p>
+    </div>
+    <div>
+      <form class="d-flex">
+        <div class="mb-1  col-lg-2">
+          <label for="imputej8a" class="form-label">Escribe un numero.</label>
+          <input type="text" class="form-control" id="imputej8a" ">
+        </div>
+      </form>
+      <button type="submit" class="mt-2 btn shadow btn-success" onclick="divi2()">Test</button>
+    </div>  
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -14,10 +14,21 @@
 header {
   background-color: tomato;
   width: auto;
-  height: 90px;
+  height: 70px;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
 }
-.section1 {
+.logo {
+  width: 20%;
+  border-bottom: 2px solid black;
+}
+.section-a {
 background-color: var(--backcolorfirts);
+border-top: 2px solid black;
+}
+.section-b {
+  background-color: var(--backcolorSecond);
+  border-top: 2px solid black;
 }
 .bodyback {
   background-color: #0093E9;
@@ -28,10 +39,4 @@ background-color: var(--backcolorfirts);
 .textsize {
   font-size: 500%;
   text-shadow: 20px black;
-}
-.section2 {
-  background-color: var(--backcolorSecond);
-}
-.section3 {
-  background-color: var(--backcolorfirts);
 }
