@@ -54,13 +54,43 @@ if (ingreso %2 == 0) {
 }
 }
 function textCompare() {
-  let texto = document.getElementById("imputej9a").value.toLowerCase
+  let texto = document.getElementById("imputej9a").value;
+  let textoMin = texto.toLowerCase();
   let newText = "";
-for (let index = 0; index < texto.length; index++) {
-  if (texto[index] === "a"||texto[index] ==="e"||texto[index] ==="i"||texto[index] ==="o"||texto[index] ==="u") {
-    newText = newText + texto[index];
+for (let index = 0; index < textoMin.length; index++) {
+  if (textoMin[index] === "a"||textoMin[index] ==="e"||textoMin[index] ==="i"||textoMin[index] ==="o"||textoMin[index] ==="u") {
+    newText = newText + textoMin[index];
     
   }
 }
   alert('Las vocales encontradas son: ' + '"' + newText + '".')
+}
+function div3() {
+  let ingreso = document.getElementById("imputej10a").value;
+if (ingreso %2 == 0 || ingreso %3 == 0 || ingreso %5 == 0 || ingreso %7 == 0) {
+    alert("El numero es divisible.");
+} else {
+    alert("El numero NO es divisible.");
+  }
+}
+function div3V2() {
+  let ingreso = document.getElementById("imputej11a").value;
+if (ingreso %2 == 0) {
+    alert("El numero es divisible por 2.");
+} else {
+    if (ingreso %3 == 0) {
+      alert("El numero es divisible por 3.");
+    } else {
+      if (ingreso %5 == 0) {
+        alert("El numero es divisible por 5.");
+      } else {
+        if (ingreso %7 == 0) {
+          alert("El numero es divisible por 7.");
+        } else {
+          alert("El numero no es divisible por 2, 3, 5 o 7.")
+        }
+      }
+      
+    }
+  }
 }
