@@ -18,8 +18,11 @@ header {
   border-bottom: 2px solid black;
   margin-bottom: 10px;
 }
+.btn-warning {
+  background-color:#F7E018;
+}
 .logo {
-  width: 20%;
+  width: 68px;
   border-bottom: 2px solid black;
 }
 .section-a {
@@ -39,4 +42,12 @@ border-top: 2px solid black;
 .textsize {
   font-size: 500%;
   text-shadow: 20px black;
+}
+footer {
+  width: auto;
+  height: 200px;
+  background-color: tomato;
+}
+.text-decoration-none {
+  color: #212529;
 }

@@ -53,3 +53,14 @@ if (ingreso %2 == 0) {
       alert("El numero NO es divisible por 2.");
 }
 }
+function textCompare() {
+  let texto = document.getElementById("imputej9a").value.toLowerCase
+  let newText = "";
+for (let index = 0; index < texto.length; index++) {
+  if (texto[index] === "a"||texto[index] ==="e"||texto[index] ==="i"||texto[index] ==="o"||texto[index] ==="u") {
+    newText = newText + texto[index];
+    
+  }
+}
+  alert('Las vocales encontradas son: ' + '"' + newText + '".')
+}
