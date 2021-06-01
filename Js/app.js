@@ -16,7 +16,6 @@ function suma2() {
   let ingreso2 = prompt("Escribe el segundo numero");
   alert("El resultado de la suma es :" + (parseFloat(ingreso1) + parseFloat(ingreso2)) + ".");
 }
-
 function comparar() {
     let valor1 =  document.getElementById("imputej6a").value;
     let valor2 =  document.getElementById("imputej6b").value;
@@ -42,7 +41,6 @@ if (ingreso1a > ingreso2a) {
 } else {
   alert("El valor mas alto es :" + ingreso3a + ".");
 }
-  
 }
 }
 function divi2() {
@@ -60,8 +58,7 @@ function textCompare() {
 for (let index = 0; index < textoMin.length; index++) {
   if (textoMin[index] === "a"||textoMin[index] ==="e"||textoMin[index] ==="i"||textoMin[index] ==="o"||textoMin[index] ==="u") {
     newText = newText + textoMin[index];
-    
-  }
+    }
 }
   alert('Las vocales encontradas son: ' + '"' + newText + '".')
 }
